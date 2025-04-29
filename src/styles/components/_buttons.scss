@@ -6,6 +6,7 @@
     font-weight: bold;
     justify-content: center;
     white-space: nowrap;
+    cursor: pointer;
 
     &--primary {
         color: $buttonTextColor;

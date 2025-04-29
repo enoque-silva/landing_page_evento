@@ -1,15 +1,22 @@
 @use 'variables' as *;
 
 .hero{
-    padding-top: 64px;
-    padding-bottom: 100px;
-    background-image: url(../images/fundo.png);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background-image: url(../images/background_hero_enoque_menosemais.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
+    height: 100vh; /* Altura da tela */
+    align-items: center;
 
     .container{
         position: relative;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     &::before{
@@ -20,21 +27,22 @@
         height: 100%;
         background-color: $overleyColor;
         content: '';
-        opacity: 0.8;
+        opacity: 0.15;
     }
 
     &__logo{
         display: block;
         margin: 0 auto;
-        height: 80px;
+        height: 120px;
+        margin-bottom: 50px;
     }
     
     &__text{
-        margin-top: 64px;
-        margin-bottom: 64px;
+        margin-top: 10px;
+        margin-bottom: 8px;
         font-size: 40px;
         line-height: 56px;
-        font-weight: 800;
+        font-weight: lighter;
         text-align: center;
         color: $heroTextColor;
     }
@@ -42,9 +50,10 @@
     @media (max-width: 640px) {
 
         padding: 40px 0;
+        height: 100%;
 
         &__logo{
-            height: 40px;
+            height: 80px;
         }
 
         &__text{

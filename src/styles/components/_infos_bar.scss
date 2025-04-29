@@ -1,15 +1,17 @@
 @use '../variables' as *;
 
 .infos-bar{
-    padding: 16px 24px;
-    background-color: $barBackgroundColor;
+    padding: 18px 26px;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
+    border-radius: 4px;
+    
 
     &__infos{
         display: flex;
         gap: 40px;
-        
+
         &__item{
             font-size: 14px;
             color: $barTextColor;
@@ -20,6 +22,11 @@
                 display: block;
             }
         }
+    }
+
+    a{
+        border-radius: 4px;
+        padding: 15px 20px;
     }
 
     @media (max-width: 640px) {

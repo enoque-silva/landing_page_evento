@@ -3,11 +3,11 @@
 .event{
     padding: 80px 0;
     
-    &--fontend{
+    &--gradiente1{
         background-image: linear-gradient($blue1,$blue2);
     }
 
-    &--backend{
+    &--gradiente2{
         background-image: linear-gradient($blue2, $blue1);
     }
 
@@ -19,26 +19,28 @@
 
     .container{
         display: flex;
-        gap: 40px;  
+        gap: 45px;  
+        align-items: center;
     }
 
     &__details{
         
 
         &__title{
-            font-size: 18px;
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
+            color: #feaf00;
         }
 
         &__description{
-            font-size: 16px;
-            line-height: 22px;
+            font-size: 18px;
+            line-height: 28px;
         }
     }
 
     &__image{
-        max-width: 360px;
+        max-width: 420px;
     }
 
     @media (max-width: 640px) {

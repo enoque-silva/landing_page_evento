@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Churras do Enoque</title>
+    <title>Churrasquinho do Enoque | com Menos é Mais</title>
 
     <!-- Fonte: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.scss">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="">
-            <p class="hero__text">
-                Já começou a contagem regressiva pro churras mais esperado do ano!
-                <br>
-                Faltam: 10d 12h 20m 15s
-            </p>
+            <div>
+                <img class="hero__logo" src="./images/logo_enoque_menosemais.png" alt="">
+                <p class="hero__text" id="hero__text_contador">
+                    O evento começa em:
+                </p>
+                <div class="countdownBar">
+                    <ul class="countdownBar__infos">
+                        <li class="countdownBar__infos__item">
+                            <span id="contadorDias"></span> 
+                            <b>DIAS</b>
+                        </li>
+                        <li class="countdownBar__infos__item"> 
+                            <span id="contadorHoras"></span>
+                            <b>HORAS</b>
+                        </li>
+                        <li class="countdownBar__infos__item">
+                            <span id="contadorMinutos"></span>
+                            <b>MINUTOS</b>
+                        </li>
+                        <li class="countdownBar__infos__item">
+                            <span id="contadorSegundos"></span>
+                            <b>SEGUNDOS</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
@@ -35,37 +59,79 @@
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Quando</b>
-                        12/12/2025 às 19hs    
-                    </li>  
+                        12/09/2025 às 19hs
+                    </li>
                 </ul>
-                <a class="button button--primary">Garanta sua vaga</a> 
+                <a class="button button--primary">Garanta sua vaga</a>
             </div>
         </div>
     </header>
-    <section class="event event--fontend" >
+    <section class="sobre__evento event--gradiente1">
+        <div class="container" data-aos="fade-down">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre o Evento</h2>
+                <p class="event__details__description">
+                    O Churrasco do Enoque já é tradição! Todo ano, ele reúne os amigos, a família e os parceiros pra
+                    celebrar
+                    a vida com muito estilo, sabor e alegria. <br><br>
+                    Em 2025, o evento vem maior e melhor: ambiente preparado, estrutura profissional e um show exclusivo
+                    do
+                    grupo Menos é Mais. <br><br>
+                    <b>Venha curtir com a gente essa festa que já virou referência!</b>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="event event--gradiente2">
         <div class="container" data-aos="fade-right">
             <div class="event__details">
-                <h2 class="event__details__title">Front-end</h2>
+                <h2 class="event__details__title">Atração Principal</h2>
                 <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, voluptatum tempore sit a ea porro dolorem rerum. Suscipit, perferendis vero! Sunt ullam earum placeat minus odio nemo? Placeat, nam? Minus!
+                    Um dos maiores nomes do pagode da atualidade vai marcar presença no nosso churrasco! Prepare o
+                    coração porque o repertório vai ter os clássicos que todo mundo ama e os sucessos mais recentes. É
+                    pagode raiz com a energia lá no alto!
                 </p>
             </div>
-            <img class="event__image" src="images/frontend.png" alt="Front-end">
+            <img class="event__image" src="images/menosemais_perfil.png" alt="">
         </div>
     </section>
-    <section class="event event--backend event--image-left">
+    <section class="event event--gradiente1 event--image-left">
         <div class="container" data-aos="fade-left">
             <div class="event__details">
-                <h2 class="event__details__title">Front-end</h2>
+                <h2 class="event__details__title">Open Churras & Bebidas</h2>
                 <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, voluptatum tempore sit a ea porro dolorem rerum. Suscipit, perferendis vero! Sunt ullam earum placeat minus odio nemo? Placeat, nam? Minus!
+                    Aqui o churrasco é de respeito!
+                    Picanha, costela, linguiça, frango e muito mais na brasa o dia todo. <br><br>
+                    Acompanhamentos variados: arroz, farofa, vinagrete, pão de alho e saladas. <br><br>
+                    Bebidas geladas no ponto: cerveja, refrigerante, água e drinks
+                    Tudo liberado no sistema open food + open bar (incluso no ingresso)
                 </p>
             </div>
-            <img class="event__image" src="images/frontend.png" alt="Front-end">
+            <img class="event__image" src="images/churrasco.png" alt="Front-end">
         </div>
     </section>
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="scripts/main.js"></script>   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+    <script src="scripts/main.js"></script>
 </body>
+
+<footer class="footer">
+
+    <div class="footer-links-bar">
+
+      <div class="footer-social">
+        <a href="https://wa.me/5598970219645?text=Oi%20Enoque%2C%20vim%20pelo%20seu%20portif%C3%B3lio.%20" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/enoque__ribeiro" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/enoque-silva" target="_blank">LinkedIn</a>
+      </div>
+    </div> 
+
+      
+
+    <div class="footer-bottom">
+      © 2025 Enoque Ribeiro. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+
 </html>
