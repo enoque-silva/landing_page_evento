@@ -1,6 +1,7 @@
 .footer {
-    background-color: #1a1a1a;
-    color: #fff;
+    // background-color: #1a1a1a;
+    background-image: linear-gradient(#e49c00, #e49c00);
+    color: #141414;
     padding: 40px 20px 20px;
     border-top: 1px solid #feaf00;
     display: flex;
@@ -20,25 +21,26 @@
         justify-content: space-evenly;
 
         a {
-            color: #fff;
+            color: #141414;
             text-decoration: none;
             font-size: 16px;
             transition: color 0.3s;
-            
+            font-weight: 400;
         }
 
         a:hover {
-            color: #feaf00;
+            font-weight: bold;
         }
     }
 
     &-bottom {
         text-align: center;
         font-size: 14px;
-        color: #feaf00;
+        color: #141414;
         margin-top: 30px;
         border-top: 1px solid #333;
         padding-top: 15px;
+        font-weight: bold;
     }
 
     @media (max-width: 768px) {
